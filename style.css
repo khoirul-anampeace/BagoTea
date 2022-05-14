@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  font-size: 1.125rem;
+}
+hr {
+  width: 100px;
+  border: 2px #61b136 solid;
+  margin: 1px auto 30px auto;
+}
+.navbar {
+  background-color: #61b136 !important;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+.btn-primary {
+  background-color: #64a2ff !important;
+  border: none !important;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background-color: #3c8afe !important;
+  transform: rotate(5deg);
+}
+.nav-effect {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #bbdc2f;
+  transition: 0.3s;
+}
+.navbar .navbar ul li a {
+  color: #bbdc2f;
+}
+.navbar ul li a:hover {
+  color: #fff;
+}
+.nvabar ul li a:active {
+  color: #fff;
+}
+header {
+  background: url(https://images.unsplash.com/photo-1620903376453-25f5a6fd533e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+header .title {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: justify;
+}
+header .title h3 {
+  background-color: #bbdc2f;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+}
+header .title p {
+  width: 500px;
+}
+.scrolltop {
+  background-color: #61b136;
+  position: fixed;
+  padding: 5px 10px;
+  z-index: 1;
+  right: 15px;
+  bottom: 10px;
+  border-radius: 5px;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.show-scroll {
+  visibility: visible;
+  bottom: 20px;
+}
+.scrolltop i {
+  color: #fff;
+}
+
+.about {
+  padding: 70px 0;
+}
+.about .container {
+  text-align: justify;
+}
+
+.tourism {
+  padding: 70px;
+  min-height: 100vh;
+  background-color: #e1eec7;
+}
+.tourism .container .row div {
+  margin-bottom: 25px;
+}
+.tourism .container img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.products {
+  padding: 70px;
+}
+.products .container .row div {
+  margin-bottom: 25px;
+}
+.products .container img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+.products h5 {
+  margin: 15px 0;
+}
+.products p {
+  text-align: justify;
+}
+.products .kotak div {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+.products .kotak div:hover {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.products .kotak div.active {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.productsprice {
+  padding: 70px 0;
+  /* min-height: 100vh; */
+  background-color: #e1eec7;
+}
+.productsprice table {
+  margin-top: 30px;
+  border: 1px rgb(148, 148, 148);
+}
+.productsprice table th {
+  background: #ecffe1;
+}
+.productsprice table tbody tr:hover {
+  cursor: pointer;
+  background-color: #ecffe1;
+}
+
+.feedback {
+  padding: 70px 0;
+  min-height: 100vh;
+}
+
+footer {
+  background-color: #61b136;
+  color: #fff;
+  margin-bottom: -30px;
+  font-weight: 300;
+  padding: 10px 0;
+}
+footer p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  header .title p {
+    width: 340px;
+  }
+  .about .container div {
+    margin-top: 10px;
+  }
+  .tourism {
+    max-height: 500vh;
+  }
+  .products {
+    max-height: 500vh;
+  }
+  .tourism .container img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+  }
+  .products .container img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    background-position: center;
+  }
+  header .title {
+    top: 70%;
+  }
+  header .title p {
+    width: 310px;
+  }
+  .about .container div {
+    margin-top: 10px;
+  }
+  .tourism .container img {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .products .container img {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+  }
+}
